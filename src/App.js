@@ -18,7 +18,7 @@ const handelchange = (e) =>{
       <div>name:{newName}</div>
       <div>password:{newPin}</div>
       <div>email:{eMail}</div>    
-    </div>
+    </div> 
   );
 }
 export default App;
