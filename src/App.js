@@ -1,32 +1,23 @@
 import React,{useState} from "react";
 
 const App = () => {
-const [newName,setnewName]=useState('')
-const handelName = (event) =>{
-  setnewName(event.target.value)
+  const allvalue = () => {
+    all'',
+    password'',``
+    mail''
+  }
+const[data,setData] = useState(allvalue)
+const handelchange = (e) =>{
+  setData({ ...data,[e,target.name]: e.target.value})
 }
-const [newPin,setnewPin]=useState('')
-const handelPin = (event) =>{
-  setnewPin(event.target.value)
-}
-
-const [eMail,seteMail] = useState('')
-const handelMail = (event) => {
-  seteMail(event.target.value)
-}
-
-
-
   return (
     <div>
-      <input type="text" onChange={handelName} value={newName}></input>
-      <input type="password" onChange={handelPin}></input>
-      <input type="e-mail" onChange={handelMail}></input>
+      <input type="text" onChange={handelchange} value={newName}></input>
+      <input type="password" onChange={handelchange} value={newPin}></input>
+      <input type="e-mail" onChange={handelchange} value={eMail}></input>
       <div>name:{newName}</div>
       <div>password:{newPin}</div>
-      <div>email:{eMail}</div>
-
-    
+      <div>email:{eMail}</div>    
     </div>
   );
 }
