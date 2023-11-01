@@ -8,13 +8,13 @@ const[data , setData] = useState({
   email:"",
 })
 const handelchange = (e) => {
-  setData({...data , [e.target.id] : e.target.value})
+  setData({...data , [e.target.name] : e.target.value})
 }
   return (
     <div>
-      <input type="text" onChange={handelchange}  value={data.text} id="text"></input>
-      <input type="password" onChange={handelchange} value={data.password} id="password"></input>
-      <input type="e-mail" onChange={handelchange} value={data.email} id="email"></input>
+      <input type="text" onChange={handelchange}  value={data.text} name="text"></input>
+      <input type="password" onChange={handelchange} value={data.password} name="password"></input>
+      <input type="e-mail" onChange={handelchange} value={data.email} name="email"></input>
 
       <div>name:{data.text}</div>
       <div>password:{data.password}</div>
